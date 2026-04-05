@@ -62,13 +62,13 @@ Our methodology employs a dual-stage deep learning pipeline leveraging transfer 
 The project is implemented in Python and incorporates several domains of software engineering:
 1. **Machine Learning Pipeline:** Built primarily with `TensorFlow` and `Keras`. `Scikit-learn` was utilized for train-test splitting. `Pandas` was used to manipulate dataset paths and labels via DataFrames.
 2. **Visualization:** `Matplotlib` is used for visualizing training/validation accuracy and loss over epochs.
-3. **Graphical User Interface (GUI):** A desktop application was developed using `customtkinter` and `tkinter` to offer an accessible interface for users without programming knowledge. The UI supports an "upload and predict" flow and provides options to save screenshot results with `PyAutoGUI` and `PyGetWindow`.
+3. **Graphical User Interface (GUI):** A web application was developed using `Streamlit` to provide a modern, easy-to-use, and accessible interface. Additionally, a desktop application was developed using `customtkinter` and `tkinter`. Both interfaces support an "upload and predict" flow and provide options to save screenshot results with `PyAutoGUI` and `PyGetWindow`.
 
 **Requirements / Dependencies:**
 - Python 3.7+
 - TensorFlow ~2.6.2, Keras ~2.6.0
 - Numpy, Pandas, Matplotlib, Scikit-learn
-- customTkinter, Pillow, PyAutoGUI, PyGetWindow
+- Streamlit, customTkinter, Pillow, PyAutoGUI, PyGetWindow
 
 ---
 
@@ -94,7 +94,7 @@ This project successfully implements an end-to-end deep learning diagnostic assi
 #### Future Work
 - **Expand Anatomical Classes:** Extend the dataset to include lower extremities such as legs, knees, ankles, and the skull.
 - **Explainable AI (Grad-CAM):** Integrate heatmaps into the GUI to highlight exactly *where* on the X-ray the model suspects the fracture resides.
-- **Web/Mobile Deployment:** Migrate the Tkinter-based desktop interface to a full-stack React or Flutter web application, connected to a Flask/FastAPI backend, to allow on-the-go diagnosis via smartphones for clinical practitioners.
+- **Web/Mobile Deployment:** Expand the current Streamlit web interface into a full-stack React or Flutter web application, connected to a Flask/FastAPI backend, to allow on-the-go diagnosis via smartphones for clinical practitioners.
 - **Hyperparameter Tuning:** Conduct extensive grid searches for learning rates and custom feature extraction convolution layers.
 
 ---

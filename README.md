@@ -62,8 +62,17 @@ This algorithm has the potential to greatly aid medical professionals in detecti
 * matplotlib~=3.3.4
 * scikit-learn~=0.24.2
 * colorama~=0.4.5
+* streamlit
 
-Run mainGUI.Py
+### Run the Application
+
+**Web Interface (Streamlit):**
+```bash
+streamlit run app.py
+```
+
+**Desktop Interface:**
+Run `mainGUI.py`
 
 # GUI
 ### Main
