@@ -9,9 +9,6 @@ venv.bak/
 
 # Dataset and outputs
 Dataset/
-temp/
-PredictResults/
-plots/
 
 # Python cache / artifacts
 __pycache__/
@@ -19,12 +16,7 @@ __pycache__/
 *$py.class
 *.so
 
-# Model weights
-weights/
-*.h5
-*.keras
-*.pt
-*.pth
+
 
 # IDEs
 .idea/
