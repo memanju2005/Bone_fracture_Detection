@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-from keras.preprocessing import image
+from tensorflow.keras.preprocessing import image
 
 # load the models when import "predictions.py"
 model_elbow_frac = tf.keras.models.load_model("weights/ResNet50_Elbow_frac.h5")

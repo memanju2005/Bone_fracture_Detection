@@ -53,7 +53,12 @@ if uploaded_file is not None:
     
     with col1:
         st.subheader("Uploaded X-Ray")
-        image = Image.open(uploaded_file)
+        try:
+            image = Image.open(uploaded_file)
+            image = image.convert("RGB")   # VERY IMPORTANT
+        except Exception as e:
+            st.error("Invalid image file. Please upload a proper image.")
+            st.stop()
         st.image(image, use_container_width=True, caption="Selected Image")
     
     # Save the file temporarily because Keras load_img expects a file path
